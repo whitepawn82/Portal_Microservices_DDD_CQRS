@@ -1,0 +1,225 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.API\\Facturacion.API.csproj": {}
+  },
+  "projects": {
+    "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.API\\Facturacion.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.API\\Facturacion.API.csproj",
+        "projectName": "Facturacion.API",
+        "projectPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.API\\Facturacion.API.csproj",
+        "packagesPath": "C:\\Users\\esteban.alcetegaray\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\esteban.alcetegaray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj": {
+                "projectPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj"
+              },
+              "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Infrastructure\\Facturacion.Infrastructure.csproj": {
+                "projectPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Infrastructure\\Facturacion.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.30, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.9.5, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj",
+        "projectName": "Facturacion.Domain",
+        "projectPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj",
+        "packagesPath": "C:\\Users\\esteban.alcetegaray\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\esteban.alcetegaray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Infrastructure\\Facturacion.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Infrastructure\\Facturacion.Infrastructure.csproj",
+        "projectName": "Facturacion.Infrastructure",
+        "projectPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Infrastructure\\Facturacion.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\esteban.alcetegaray\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\esteban.alcetegaray\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj": {
+                "projectPath": "C:\\ProyectosNET\\alpha_portal_006_DDD\\Facturacion.Domain\\Facturacion.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
