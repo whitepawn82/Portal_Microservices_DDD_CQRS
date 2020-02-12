@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Facturacion.Domain.SeedWork;
+
 
 namespace Facturacion.Domain.Aggregates.OperadorAggretate
 {
-    class Operador
+    public class Operador : Entity, IAggregateRoot
     {
     }
 }

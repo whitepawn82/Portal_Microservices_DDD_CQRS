@@ -9,11 +9,22 @@ namespace Facturacion.Infrastructure.Repositories
 {
     public class ComisionRepository : IComisionRepository
     {
+
+        private readonly FacturacionContext _context;
         public IUnitOfWork UnitOfWork => throw new NotImplementedException();
 
-        public Comision Add(Comision comision)
+        public Comision Add(Comision Comisiones)
         {
-            throw new NotImplementedException();
+            if (Comisiones.IsTransient())
+            {
+                return _context.Comisiones
+                    .Add(Comisiones)
+                    .Entity;
+            }
+            else
+            {
+                return Comisiones;
+            }
         }
 
         public Comision Delete(Comision comision)

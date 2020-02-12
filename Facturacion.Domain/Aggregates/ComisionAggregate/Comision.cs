@@ -10,8 +10,8 @@ namespace Facturacion.Domain.Aggregates.ComisionAggregate
     {
         public int Id { get; private set; }
         public int? Numero { get; set; }
-        public DateTime? DataEmision { get; set; }
-        public DateTime? DataPago { get; set; }
+        public DateTime? DateEmision { get; set; }
+        public DateTime? DatePago { get; set; }
         public string Pax { get; set; }
         public int? Facturacion { get; set; }
         public int? Porcentaje { get; set; }
@@ -23,11 +23,11 @@ namespace Facturacion.Domain.Aggregates.ComisionAggregate
 
         //public ComisionStatus ComisionStatus { get; set; }
 
-        private List<ComisionStatus> _status;
-        internal StatusValue GetStatus(string status)
-        {
-            return this._status.Single(x => x.Status.Status == status).Status;
-        }
+        //private List<ComisionStatus> _status;
+        //internal StatusValue GetStatus(string status)
+        //{
+        //    return this._status.Single(x => x.Status.Status == status).Status;
+        //}
 
     }
 }

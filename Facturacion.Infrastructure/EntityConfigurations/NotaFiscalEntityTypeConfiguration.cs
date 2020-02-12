@@ -1,4 +1,4 @@
-﻿using Facturacion.Domain.Aggregates.FacturaAggregate;
+﻿using Facturacion.Domain.Aggregates.NotaFiscalAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

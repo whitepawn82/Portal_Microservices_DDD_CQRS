@@ -1,5 +1,8 @@
 ﻿using Facturacion.Domain.Aggregates.ComisionAggregate;
+using Facturacion.Domain.Aggregates.ComisionAggregate.Agencias;
 using Facturacion.Domain.Aggregates.ComisionAggregate.Proveedores;
+using Facturacion.Domain.Aggregates.NotaFiscalAggregate;
+using Facturacion.Domain.Aggregates.OperadorAggretate;
 using Facturacion.Domain.SeedWork;
 using Facturacion.Infrastructure.EntityConfigurations;
 using MediatR;
@@ -15,8 +18,12 @@ namespace Facturacion.Infrastructure
     public class FacturacionContext : DbContext, IUnitOfWork
     {
         public const string DEFAULT_SCHEMA = "facturacion";
-        public DbSet<Comision> Comisions { get; set; }
-        public DbSet<Proveedor> Proveedors { get; set; }
+        public DbSet<Comision> Comisiones { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
+        public DbSet<Agencia> Agencias { get; set; }
+        public DbSet<NotaFiscal> NotasFiscales { get; set; }
+        public DbSet<Operador> Users { get; set; }
+
 
 
         private readonly IMediator _mediator;
@@ -62,7 +69,8 @@ namespace Facturacion.Infrastructure
     {
         public FacturacionContext CreateDbContext(string[] args)
         {
-            var optionsBuilder = new DbContextOptionsBuilder<FacturacionContext>().UseSqlServer("Server=tcp:10.0.75.1, 1433;Database=dbPortal;User ID=sa;Password=P@ssw0rd;");
+            var optionsBuilder = new DbContextOptionsBuilder<FacturacionContext>()
+                .UseSqlServer("Server=tcp:10.0.75.1, 1433;Database=dbPortal;User ID=sa;Password=P@ssw0rd;");
 
             return new FacturacionContext(optionsBuilder.Options, new NoMediator());
         }
