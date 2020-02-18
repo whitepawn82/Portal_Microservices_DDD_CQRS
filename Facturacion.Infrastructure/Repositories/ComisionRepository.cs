@@ -1,7 +1,9 @@
 ﻿using Facturacion.Domain.Aggregates.ComisionAggregate;
 using Facturacion.Domain.SeedWork;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +13,13 @@ namespace Facturacion.Infrastructure.Repositories
     {
 
         private readonly FacturacionContext _context;
-        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
+        public IUnitOfWork UnitOfWork
+        {
+            get
+            {
+                return _context;
+            }
+        }
 
         public Comision Add(Comision Comisiones)
         {
@@ -29,17 +37,25 @@ namespace Facturacion.Infrastructure.Repositories
 
         public Comision Delete(Comision comision)
         {
-            throw new NotImplementedException();
+            // Prueba
+            return comision;
         }
 
-        public Task<Comision> FindAsync(string ComisionIdentityId)
+
+        public async Task<Comision> GetAsync(int comisionId)
         {
-            throw new NotImplementedException();
+            var comision = _context
+                            .Comisiones
+                            .Local
+                            .FirstOrDefault(o => o.Id == comisionId);
+
+            return comision;
         }
 
         public Comision Update(Comision comision)
         {
-            throw new NotImplementedException();
+            // Prueba
+            return comision;
         }
     }
 }

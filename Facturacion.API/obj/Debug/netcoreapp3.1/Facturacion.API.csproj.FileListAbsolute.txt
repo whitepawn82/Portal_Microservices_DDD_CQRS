@@ -61,7 +61,6 @@ C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Mic
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
-C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -129,6 +128,9 @@ C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\ru\
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -149,4 +151,5 @@ C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\run
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.API\obj\Debug\netcoreapp3.1\Facturacion.API.MvcApplicationPartsAssemblyInfo.cache

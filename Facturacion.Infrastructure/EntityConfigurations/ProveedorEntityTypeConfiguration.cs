@@ -11,11 +11,12 @@ namespace Facturacion.Infrastructure.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<Proveedor> proveedorConfiguration)
         {
-            proveedorConfiguration.ToTable("proveedores", FacturacionContext.DEFAULT_SCHEMA);
+            proveedorConfiguration.ToTable("Proveedores", FacturacionContext.DEFAULT_SCHEMA);
 
-            proveedorConfiguration.HasKey(b => b.Id);
+            proveedorConfiguration.HasKey(p => p.ProveedorId);
 
-            proveedorConfiguration.Property(b => b.Name);
+            proveedorConfiguration.Property(p => p.ProveedorId).HasColumnName("ProveedorId").ValueGeneratedOnAdd();
+            proveedorConfiguration.Property(p => p.Name).HasMaxLength(50).IsRequired(); ;
         }
     }
 }

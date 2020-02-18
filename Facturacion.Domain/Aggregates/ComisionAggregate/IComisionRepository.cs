@@ -7,9 +7,10 @@ namespace Facturacion.Domain.Aggregates.ComisionAggregate
     {
         Comision Delete(Comision comision);
 
-        Task<Comision> FindAsync(string ComisionIdentityId);
+        //Task<Comision> FindAsync(string ComisionIdentityId);
 
         Comision Add(Comision comision);
 
+        Task<Comision> GetAsync(int comisionId);
     }
 }

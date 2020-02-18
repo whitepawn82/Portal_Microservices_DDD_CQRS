@@ -11,27 +11,30 @@ namespace Facturacion.API.Application.Commands
     public class CreateNotaFiscalCommand : IRequest<bool>
     {
         [DataMember]
-        public DateTime? DateEnvio { get; set; }
+        public int NotaFiscalId { get; set; }
+        [DataMember]
+        public DateTime DateEnvio { get; set; }
         [DataMember]
         public string Empresa { get; set; }
         [DataMember]
         public string NroNota { get; set; }
         [DataMember]
-        public DateTime? DateRechazo { get; set; }
+        public DateTime DateRechazo { get; set; }
         [DataMember]
-        public DateTime? DatePago { get; set; }
+        public DateTime DatePago { get; set; }
         [DataMember]
         public float Valor { get; set; }
         
-        public CreateNotaFiscalCommand (DateTime? dateEnvio, string empresa, string nroNota, DateTime? dateRechazo,
-            DateTime? datePago, float valor)
+        public CreateNotaFiscalCommand (int notaFiscalId, DateTime dateEnvio, string empresa, string nroNota, DateTime dateRechazo,
+            DateTime datePago, float valor)
         {
-            this.DateEnvio = dateEnvio;
-            this.Empresa = empresa;
-            this.NroNota = nroNota;
-            this.DateRechazo = dateRechazo;
-            this.DatePago = datePago;
-            this.Valor = valor;
+            NotaFiscalId = notaFiscalId;
+            DateEnvio = dateEnvio;
+            Empresa = empresa;
+            NroNota = nroNota;
+            DateRechazo = dateRechazo;
+            DatePago = datePago;
+            Valor = valor;
         }
 
     }

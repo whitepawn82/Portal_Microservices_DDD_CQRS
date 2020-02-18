@@ -17,6 +17,16 @@ namespace Facturacion.API.Application.Queries
             _connectionString = !string.IsNullOrWhiteSpace(constr) ? constr : throw new ArgumentNullException(nameof(constr));
         }
 
+        public async Task<IEnumerable<Comision>> GetAllComisionsAsync()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                return await connection.QueryAsync<Comision>("select * from facturacion.Comisiones");
+            }
+        }
+
         public async Task<Comision> GetComisionAsync(int id)
         {
             using (var connection = new SqlConnection(_connectionString))
@@ -24,14 +34,8 @@ namespace Facturacion.API.Application.Queries
                 connection.Open();
 
                 var result = await connection.QueryAsync<dynamic>(
-                   @"select c.[Id] as ordernumber,o.OrderDate as date, o.Description as description,
-                        o.Address_City as city, o.Address_Country as country, o.Address_State as state, o.Address_Street as street, o.Address_ZipCode as zipcode,
-                        os.Name as status, 
-                        oi.ProductName as productname, oi.Units as units, oi.UnitPrice as unitprice, oi.PictureUrl as pictureurl
-                        FROM ordering.Orders o
-                        LEFT JOIN ordering.Orderitems oi ON o.Id = oi.orderid 
-                        LEFT JOIN ordering.orderstatus os on o.OrderStatusId = os.Id
-                        WHERE o.Id=@id"
+                   @"select * from facturacion.Comisiones as c 
+                        WHERE c.ComisionId = @id"
                         , new { id }
                     );
 
@@ -39,23 +43,25 @@ namespace Facturacion.API.Application.Queries
                     throw new KeyNotFoundException();
 
                 return MapComisionItems(result);
-            }
 
+                //return await connection.QueryAsync<Comision>("select * from facturacion.Comisiones as c");
+            }
         }
 
         private Comision MapComisionItems(dynamic result)
         {
             var comision = new Comision
             {
-                Agencia = result[0].agencia,
-                Date = result[0].date,
-                Facturacion = result[0].facturacion,
-                Numero = result[0].numero,
-                Pax = result[0].pax,
-                Porcentaje = result[0].porcentaje,
-                Tipo = result[0].tipo,
-                Valor = result[0].valor,
-                Voucher = result[0].voucher
+                Agencia = result[0].Agencia,
+                Date = result[0].DateEmision,
+                Facturacion = result[0].Facturacion,
+                Numero = result[0].Numero,
+                Pax = result[0].Pax,
+                Porcentaje = result[0].Porcentaje,
+                Tipo = result[0].Tipo,
+                Valor = result[0].Valor,
+                StatusId = result[0].StatusId,
+                Voucher = result[0].Voucher
             };
 
 

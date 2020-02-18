@@ -9,9 +9,12 @@ namespace Facturacion.Infrastructure.EntityConfigurations
 {
     class NotaFiscalEntityTypeConfiguration : IEntityTypeConfiguration<NotaFiscal>
     {
-        public void Configure(EntityTypeBuilder<NotaFiscal> builder)
+        public void Configure(EntityTypeBuilder<NotaFiscal> notafiscalConfiguration)
         {
-            throw new NotImplementedException();
+            notafiscalConfiguration.ToTable("NotasFiscales", FacturacionContext.DEFAULT_SCHEMA);
+            notafiscalConfiguration.HasKey(n => n.NotaFiscalId);
+
+            notafiscalConfiguration.Property(n => n.NotaFiscalId).HasColumnName("NotaFiscalId").ValueGeneratedOnAdd();
         }
     }
 }

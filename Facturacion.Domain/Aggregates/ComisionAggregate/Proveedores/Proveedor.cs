@@ -7,7 +7,19 @@ namespace Facturacion.Domain.Aggregates.ComisionAggregate.Proveedores
 {
     public class Proveedor : Entity, IAggregateRoot
     {
-        public object Id { get; set; }
-        public object Name { get; set; }
+
+        public int ProveedorId { get; set; }
+        public string Name { get; set; }
+
+        public Proveedor(int id, string name) : this()
+        {
+            ProveedorId = id;
+            Name = name;
+        }
+
+        public Proveedor()
+        {
+        }
     }
+
 }

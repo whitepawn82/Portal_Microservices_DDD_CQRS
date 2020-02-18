@@ -13,7 +13,6 @@ C:\Users\esteban.alcetegaray\source\repos\alpha_portal_006_DDD\Facturacion.Domai
 C:\Users\esteban.alcetegaray\source\repos\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.csproj.CopyComplete
 C:\Users\esteban.alcetegaray\source\repos\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.dll
 C:\Users\esteban.alcetegaray\source\repos\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.pdb
-C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.csprojAssemblyReference.cache
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.AssemblyInfoInputs.cache
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.AssemblyInfo.cs
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\bin\Debug\netcoreapp3.0\Facturacion.Domain.deps.json

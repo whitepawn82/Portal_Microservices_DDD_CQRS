@@ -9,7 +9,14 @@ namespace Facturacion.Infrastructure.Repositories
 {
     public class ProveedorRepository : IProveedorRepository
     {
-        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
+        private readonly FacturacionContext _context;
+        public IUnitOfWork UnitOfWork
+        {
+            get
+            {
+                return _context;
+            }
+        }
 
         public Proveedor Add(Proveedor proveedor)
         {

@@ -11,11 +11,19 @@ namespace Facturacion.Infrastructure.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<Comision> comisionConfiguration)
         {
-            comisionConfiguration.ToTable("comisions", FacturacionContext.DEFAULT_SCHEMA);
+            comisionConfiguration.ToTable("Comisiones", FacturacionContext.DEFAULT_SCHEMA);
+            comisionConfiguration.HasKey(c => c.ComisionId);
 
-            comisionConfiguration.HasKey(b => b.Id);
+            comisionConfiguration.Property(c => c.ComisionId).HasColumnName("ComisionId").ValueGeneratedOnAdd();
 
-            comisionConfiguration.Property(b => b.Numero);
+            //comisionConfiguration.Property(c => c.NotaFiscalId).HasColumnName("NotaFiscalId").HasColumnType("integer").HasMaxLength(50).IsRequired();
+
+            comisionConfiguration.Property(c => c.Tipo).HasColumnName("Tipo").HasMaxLength(100).IsRequired();
+
+            comisionConfiguration.Property(c => c.Voucher).HasColumnName("Voucher").HasMaxLength(50).IsRequired();
+            comisionConfiguration.Property(c => c.Agencia).HasColumnName("Agencia").HasMaxLength(150).IsRequired();
+
+
         }
     }
 }

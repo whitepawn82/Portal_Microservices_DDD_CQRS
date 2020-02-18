@@ -72,3 +72,5 @@ C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Infrastructure\bin\Debug\netcor
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Infrastructure\obj\Debug\netcoreapp3.0\Facturacion.Infrastructure.csproj.CopyComplete
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Infrastructure\obj\Debug\netcoreapp3.0\Facturacion.Infrastructure.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Infrastructure\obj\Debug\netcoreapp3.0\Facturacion.Infrastructure.pdb
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Infrastructure\bin\Debug\netcoreapp3.0\Facturacion.Infrastructure.runtimeconfig.json
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Infrastructure\bin\Debug\netcoreapp3.0\Facturacion.Infrastructure.runtimeconfig.dev.json

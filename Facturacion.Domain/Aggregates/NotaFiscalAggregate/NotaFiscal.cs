@@ -9,17 +9,15 @@ namespace Facturacion.Domain.Aggregates.NotaFiscalAggregate
 {
     public class NotaFiscal : Entity, IAggregateRoot
     {
-        private DateTime? DateEnvio;
-        private DateTime? DateRechazo;
-        private DateTime? DatePago;
 
-        public int Id { get; private set; }
-        //public DateTime? DateEnvio { get; set; }
+        public int NotaFiscalId { get; private set; }
+        public DateTime DateEnvio { get; set; }
         public string Empresa { get; set; }
         public string NroNota { get; set; }
-        //public DateTime? DateRechazo { get; set; }
-        //public DateTime? DatePago { get; set; }
+        public DateTime DateRechazo { get; set; }
+        public DateTime DatePago { get; set; }
         public float Valor { get; set; }
+
         //public NotaFiscalStatus FacturaStatus { get; set; }
 
         //private List<NotaFiscalStatus> _status;
@@ -29,8 +27,9 @@ namespace Facturacion.Domain.Aggregates.NotaFiscalAggregate
         //}
 
 
-        public NotaFiscal(DateTime? dateEnvio, string empresa, string nroNota, DateTime? dateRechazo, DateTime? datePago, float valor)
+        public NotaFiscal(int notaFiscalId, DateTime dateEnvio, string empresa, string nroNota, DateTime dateRechazo, DateTime datePago, float valor)
         {
+            NotaFiscalId = notaFiscalId;
             DateEnvio = dateEnvio;
             Empresa = empresa;
             NroNota = nroNota;

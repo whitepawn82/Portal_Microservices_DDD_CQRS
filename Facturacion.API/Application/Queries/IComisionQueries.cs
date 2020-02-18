@@ -8,5 +8,7 @@ namespace Facturacion.API.Application.Queries
     public interface IComisionQueries
     {
         Task<Comision> GetComisionAsync(int id);
+
+        Task<IEnumerable<Comision>> GetAllComisionsAsync();
     }
 }

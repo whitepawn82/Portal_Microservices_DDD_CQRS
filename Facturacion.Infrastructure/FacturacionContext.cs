@@ -70,7 +70,7 @@ namespace Facturacion.Infrastructure
         public FacturacionContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<FacturacionContext>()
-                .UseSqlServer("Server=tcp:10.0.75.1, 1433;Database=dbPortal;User ID=sa;Password=P@ssw0rd;");
+                .UseSqlServer("Server=172.17.0.2;Initial Catalog=dbPortal02;User ID=sa;Password=P@ssw0rd;", b => b.MigrationsAssembly("Facturacion.API"));
 
             return new FacturacionContext(optionsBuilder.Options, new NoMediator());
         }

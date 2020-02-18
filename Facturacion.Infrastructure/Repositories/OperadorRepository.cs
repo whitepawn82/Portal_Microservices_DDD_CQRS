@@ -8,7 +8,14 @@ namespace Facturacion.Infrastructure.Repositories
 {
     public class OperadorRepository : IOperadorRepository
     {
-        public IUnitOfWork UnitOfWork => throw new NotImplementedException();
+        private readonly FacturacionContext _context;
+        public IUnitOfWork UnitOfWork
+        {
+            get
+            {
+                return _context;
+            }
+        }
 
         public Operador Add(Operador operador)
         {

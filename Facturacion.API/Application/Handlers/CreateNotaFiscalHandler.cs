@@ -12,16 +12,18 @@ namespace Facturacion.API.Application.Handlers
     public class CreateNotaFiscalHandler : IRequestHandler<CreateNotaFiscalCommand, bool>
     {
         private readonly INotaFiscalRepository _notafiscalRepository;
+        private readonly IMediator _mediator;
 
-        public CreateNotaFiscalHandler (INotaFiscalRepository notafiscalRepository)
+        public CreateNotaFiscalHandler (INotaFiscalRepository notafiscalRepository, IMediator mediator)
         {
             _notafiscalRepository = notafiscalRepository;
+            _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
 
         public async Task<bool> Handle(CreateNotaFiscalCommand request, CancellationToken cancellationToken)
         {
-            var notafiscal = new NotaFiscal(request.DateEnvio, request.Empresa, request.NroNota, request.DateRechazo, 
+            var notafiscal = new NotaFiscal(request.NotaFiscalId, request.DateEnvio, request.Empresa, request.NroNota, request.DateRechazo, 
                 request.DatePago, request.Valor);
 
             _notafiscalRepository.Add(notafiscal);

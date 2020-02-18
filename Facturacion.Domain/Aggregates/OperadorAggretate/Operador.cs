@@ -5,5 +5,9 @@ namespace Facturacion.Domain.Aggregates.OperadorAggretate
 {
     public class Operador : Entity, IAggregateRoot
     {
+        public Operador()
+        {
+
+        }
     }
 }

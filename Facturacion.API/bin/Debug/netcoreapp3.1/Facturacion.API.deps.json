@@ -24,14 +24,15 @@
     ".NETCoreApp,Version=v3.1": {
       "Facturacion.API/1.0.0": {
         "dependencies": {
+          "Autofac": "5.1.0",
+          "Autofac.Extensions.DependencyInjection": "6.0.0",
           "Dapper": "2.0.30",
           "Facturacion.Domain": "1.0.0",
           "Facturacion.Infrastructure": "1.0.0",
           "MediatR": "8.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "8.0.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1",
-          "Microsoft.EntityFrameworkCore.Tools": "3.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "3.1.1",
           "Microsoft.Extensions.Logging.Debug": "3.1.1",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.9.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.1",
@@ -141,7 +142,6 @@
           "Microsoft.Extensions.Localization": "3.1.0.0",
           "Microsoft.Extensions.Logging.Configuration": "3.1.0.0",
           "Microsoft.Extensions.Logging.Console": "3.1.0.0",
-          "Microsoft.Extensions.Logging.Debug.Reference": "3.1.0.0",
           "Microsoft.Extensions.Logging.EventLog": "3.1.0.0",
           "Microsoft.Extensions.Logging.EventSource": "3.1.0.0",
           "Microsoft.Extensions.Logging.TraceSource": "3.1.0.0",
@@ -316,6 +316,32 @@
         },
         "compile": {
           "Facturacion.API.dll": {}
+        }
+      },
+      "Autofac/5.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/6.0.0": {
+        "dependencies": {
+          "Autofac": "5.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
       "Dapper/2.0.30": {
@@ -813,11 +839,6 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/3.1.1": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "3.1.1"
-        }
-      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.1"
@@ -961,6 +982,15 @@
       "Microsoft.Extensions.Logging.Debug/3.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "3.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.100.119.61404"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
         }
       },
       "Microsoft.Extensions.Options/3.1.1": {
@@ -2406,7 +2436,8 @@
         "dependencies": {
           "Facturacion.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1",
+          "Microsoft.EntityFrameworkCore.Sqlite": "3.1.1"
         },
         "runtime": {
           "Facturacion.Infrastructure.dll": {}
@@ -3024,12 +3055,6 @@
       "Microsoft.Extensions.Logging.Console/3.1.0.0": {
         "compile": {
           "Microsoft.Extensions.Logging.Console.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Microsoft.Extensions.Logging.Debug.Reference/3.1.0.0": {
-        "compile": {
-          "Microsoft.Extensions.Logging.Debug.dll": {}
         },
         "compileOnly": true
       },
@@ -4049,6 +4074,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Autofac/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cBW4cIWAIvVTGv1h0EGw2d0FlxX/8NLjPWXYLLrFcjnYwvloshmGcB34KYNpCtyOJZTg3xjgq4UkGRs4nC9KyQ==",
+      "path": "autofac/5.1.0",
+      "hashPath": "autofac.5.1.0.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+1WNYENm4s/bSBrmTy2sD0zs6MCiCAlUaEbHJ+y7fKpXKqnFl4oTkIkUoDKlp05dl1VoAASBUJocaKKJa1KPCw==",
+      "path": "autofac.extensions.dependencyinjection/6.0.0",
+      "hashPath": "autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512"
+    },
     "Dapper/2.0.30": {
       "type": "package",
       "serviceable": true,
@@ -4244,13 +4283,6 @@
       "sha512": "sha512-ws6yIIpX4w3odZqILfZCWVWvBu7j7mGLLPkdg+GMdorwTSz4/NOQ0ngxnaj/E2on0EKXylv0jHP8OFqvycBM2A==",
       "path": "microsoft.entityframeworkcore.sqlserver/3.1.1",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.3.1.1.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rk6bBWIACTeEDFQnmslhPQYyVI4Qwy1k1XQ5NAwyZZ6Po6kGvyRs7n0tzb2M40m461vrebKhclLyR8VQYSuxig==",
-      "path": "microsoft.entityframeworkcore.tools/3.1.1",
-      "hashPath": "microsoft.entityframeworkcore.tools.3.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.1": {
       "type": "package",
@@ -5776,11 +5808,6 @@
       "sha512": ""
     },
     "Microsoft.Extensions.Logging.Console/3.1.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Extensions.Logging.Debug.Reference/3.1.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
