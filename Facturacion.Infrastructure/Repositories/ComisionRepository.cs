@@ -21,18 +21,24 @@ namespace Facturacion.Infrastructure.Repositories
             }
         }
 
-        public Comision Add(Comision Comisiones)
+        public ComisionRepository(FacturacionContext context)
         {
-            if (Comisiones.IsTransient())
-            {
-                return _context.Comisiones
-                    .Add(Comisiones)
-                    .Entity;
-            }
-            else
-            {
-                return Comisiones;
-            }
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+        }
+
+        public Comision Add(Comision Comision)
+        {
+            //if (Comisiones.IsTransient())
+            //{
+            //    return _context.Comisiones
+            //        .Add(Comisiones)
+            //        .Entity;
+            //}
+            //else
+            //{
+            //    return Comisiones;
+            //}
+            return _context.Comisiones.Add(Comision).Entity;
         }
 
         public Comision Delete(Comision comision)

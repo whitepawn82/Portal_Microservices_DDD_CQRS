@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\esteban.alcetegaray\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\esteban.alcetegaray\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_alpha_portal_006_DDD.744770097.00" t="ExcludeRecursive" />
+    <e p="C:\Users\esteban.alcetegaray\Documents\GitHub\Portal_Microservices_DDD" t="IncludeFlat">
+      <e p=".dockerignore" t="Include" />
+      <e p="alpha_portal_006_DDD.sln" t="IncludeFlat" />
+      <e p="Facturacion.API" t="IncludeRecursive">
+        <e p="Application" t="Include">
+          <e p="Commands" t="Include">
+            <e p="CreateComisionCommand.cs" t="Include" />
+            <e p="CreateNotaFiscalCommand.cs" t="Include" />
+            <e p="SendNotaFiscalCOmmand.cs" t="Include" />
+            <e p="SetStatusNotaFiscalCommand.cs" t="Include" />
+          </e>
+          <e p="Handlers" t="Include">
+            <e p="CreateComisionCommandHandler.cs" t="Include" />
+            <e p="CreateNotaFiscalHandler.cs" t="Include" />
+          </e>
+          <e p="Models" t="Include">
+            <e p="Comision.cs" t="Include" />
+            <e p="ComisionVoucher.cs" t="Include" />
+            <e p="Factura.cs" t="Include" />
+            <e p="FacturaItem.cs" t="Include" />
+            <e p="NotaFiscal.cs" t="Include" />
+            <e p="NotaFiscalComision.cs" t="Include" />
+          </e>
+          <e p="Queries" t="Include">
+            <e p="AgenciaQueries.cs" t="Include" />
+            <e p="AgenciaViewModel.cs" t="Include" />
+            <e p="ComisionQueries.cs" t="Include" />
+            <e p="ComisionViewModel.cs" t="Include" />
+            <e p="FacturaQueries.cs" t="Include" />
+            <e p="FacturaViewModel.cs" t="Include" />
+            <e p="IAgenciaQueries.cs" t="Include" />
+            <e p="IComisionQueries.cs" t="Include" />
+            <e p="IFacturasQueries.cs" t="Include" />
+            <e p="INotasFiscalesQueries.cs" t="Include" />
+            <e p="NotaFiscalQueries.cs" t="Include" />
+            <e p="NotaFiscalViewModel.cs" t="Include" />
+          </e>
+        </e>
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ComisionesController.cs" t="Include" />
+          <e p="DefaultController.cs" t="Include" />
+          <e p="FacturasController.cs" t="Include" />
+          <e p="NotasFiscalesController.cs" t="Include" />
+          <e p="ValuesController.cs" t="Include" />
+        </e>
+        <e p="Dockerfile" t="Include" />
+        <e p="Facturacion.API.csproj" t="IncludeRecursive" />
+        <e p="Infrastructure" t="Include">
+          <e p="AutoFac" t="Include">
+            <e p="ApplicationModule.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20200213201732_InitialCreateMigration_001.cs" t="Include" />
+          <e p="20200213201732_InitialCreateMigration_001.Designer.cs" t="Include" />
+          <e p="FacturacionContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Facturacion.API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="Facturacion.Domain" t="IncludeRecursive">
+        <e p="Aggregates" t="Include">
+          <e p="ComisionAggregate" t="Include">
+            <e p="Agencias" t="Include">
+              <e p="Agencia.cs" t="Include" />
+              <e p="IAgenciaRepository.cs" t="Include" />
+            </e>
+            <e p="Comision.cs" t="Include" />
+            <e p="ComisionStatus.cs" t="Include" />
+            <e p="IComisionRepository.cs" t="Include" />
+            <e p="Proveedores" t="Include">
+              <e p="IProveedorRepository.cs" t="Include" />
+              <e p="Proveedor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="NotaFiscalAggregate" t="Include">
+            <e p="INotaFiscalRepository.cs" t="Include" />
+            <e p="NotaFiscal.cs" t="Include" />
+            <e p="NotaFiscalStatus.cs" t="Include" />
+            <e p="NotaFiscaltem.cs" t="Include" />
+          </e>
+          <e p="OperadorAggretate" t="Include">
+            <e p="IOperadorRepository.cs" t="Include" />
+            <e p="Operador.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Events" t="Include" />
+        <e p="Facturacion.Domain.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Facturacion.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SeedWork" t="Include">
+          <e p="Entity.cs" t="Include" />
+          <e p="IAggregateRoot.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="IUnitOfWork.cs" t="Include" />
+        </e>
+        <e p="SharedKernel" t="Include">
+          <e p="StatusValue.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Facturacion.Infrastructure" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EntityConfigurations" t="Include">
+          <e p="AgenciaEntityTypeConfiguration.cs" t="Include" />
+          <e p="ComisionEntityTypeConfiguration.cs" t="Include" />
+          <e p="NotaFiscalEntityTypeConfiguration.cs" t="Include" />
+          <e p="ProveedorEntityTypeConfiguration.cs" t="Include" />
+        </e>
+        <e p="Facturacion.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="FacturacionContext.cs" t="Include" />
+        <e p="MediatorExtension.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Facturacion.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="AgenciaRepository.cs" t="Include" />
+          <e p="ComisionRepository.cs" t="Include" />
+          <e p="NotaFiscalRepository.cs" t="Include" />
+          <e p="OperadorRepository.cs" t="Include" />
+          <e p="ProveedorRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src" t="Include">
+        <e p="ApiGateways" t="Include" />
+        <e p="Services" t="Include">
+          <e p="Facturacion" t="Include" />
+        </e>
+        <e p="WebApps" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

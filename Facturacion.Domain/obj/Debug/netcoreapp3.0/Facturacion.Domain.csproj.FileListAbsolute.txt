@@ -20,3 +20,4 @@ C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\bin\Debug\netcoreapp3.0\
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\bin\Debug\netcoreapp3.0\Facturacion.Domain.pdb
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.dll
 C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.pdb
+C:\ProyectosNET\alpha_portal_006_DDD\Facturacion.Domain\obj\Debug\netcoreapp3.0\Facturacion.Domain.csprojAssemblyReference.cache

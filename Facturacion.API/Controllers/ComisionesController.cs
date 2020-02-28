@@ -10,6 +10,7 @@ using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Comision = Facturacion.API.Application.Models.Comision;
+using static Facturacion.API.Application.Handlers.CreateComisionCommandHandler;
 
 namespace Facturacion.API.Controllers
 {
@@ -57,12 +58,14 @@ namespace Facturacion.API.Controllers
             }
         }
 
-        [Route("altas")]
+        [Route("alta")]
         [HttpPost]
-        [ProducesResponseType((int)HttpStatusCode.Created)]
-        public async Task<IActionResult> CreateComisionAsync([FromBody] CreateComisionCommand command)
+        //[ProducesResponseType((int)HttpStatusCode.Created)]
+        //[ProducesResponseType(StatusCodes.Status201Created)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<ComisionDraftDTO>> CreateComisionAsync([FromBody] CreateComisionCommand request)
         {
-            return await _mediator.Send(createOrderDraftCommand);
+            return await _mediator.Send(request);
         }
 
     }

@@ -4,12 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using static Facturacion.API.Application.Handlers.CreateComisionCommandHandler;
 
 namespace Facturacion.API.Application.Commands
 {
     [DataContract]
-    public class CreateComisionCommand : IRequest<bool>
+    public class CreateComisionCommand : IRequest<ComisionDraftDTO>
     {
+
+        public int ComisionId { get; set; }
+
         [DataMember]
         public int StatusId { get; set; }
 
@@ -49,10 +53,11 @@ namespace Facturacion.API.Application.Commands
         [DataMember]
         public int Orden { get; set; }
 
-
-        public CreateComisionCommand(int statusId, int notaFiscalId, int numero, DateTime dateEmision, DateTime datePago, 
-            string pax, int facturacion, decimal porcentaje, float valor, string tipo, string voucher, string agencia, int orden)
+        public CreateComisionCommand(int comisionId, int statusId, int notaFiscalId, int numero, DateTime dateEmision, 
+            DateTime datePago, string pax, int facturacion, decimal porcentaje, float valor, string tipo, 
+            string voucher, string agencia, int orden)
         {
+            ComisionId = comisionId;
             StatusId = statusId;
             NotaFiscalId = notaFiscalId;
             Numero = numero;
@@ -67,5 +72,6 @@ namespace Facturacion.API.Application.Commands
             Agencia = agencia;
             Orden = orden;
         }
+
     }
 }

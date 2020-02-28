@@ -23,15 +23,15 @@ namespace Facturacion.Domain.Aggregates.ComisionAggregate
         public string Agencia { get; set; }
         public int Orden { get; set; }
 
-        public Comision(int comisionId, int statusId, int notaFiscald, int numero, DateTime dateEmision, DateTime datePago, string pax, 
+        public Comision(int comisionId, int statusId, int notaFiscalId, int numero, DateTime dateEmision, DateTime datePago, string pax, 
             int facturacion, decimal porcentaje, float valor, string tipo, string voucher, string agencia, int orden ) : this()
         {
             ComisionId = comisionId;
-            StatusId = statusId;
-            NotaFiscalId = notaFiscald;
+            NotaFiscalId = notaFiscalId;
             Numero = numero;
             DateEmision = dateEmision;
             DatePago = datePago;
+            StatusId = statusId;
             Pax = pax;
             Facturacion = facturacion;
             Porcentaje = porcentaje;
@@ -40,6 +40,7 @@ namespace Facturacion.Domain.Aggregates.ComisionAggregate
             Voucher = voucher;
             Agencia = agencia;
             Orden = orden;
+
         }
 
         public Comision()

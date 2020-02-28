@@ -18,10 +18,10 @@ namespace Facturacion.API.Application.Models
         public int StatusId { get; set; }
         public int Valor { get; set; }
         public string Tipo { get; set; }
-        public ComisionVoucher Detalle { get; set; }
+        //public ComisionVoucher Detalle { get; set; }
 
         public Comision (int comisionId, int numero, string pax, string voucher, string agencia, int facturacion, 
-            decimal porcentaje, int statusId, int valor, string tipo, ComisionVoucher detalle)
+            decimal porcentaje, int statusId, int valor, string tipo)
         {
             Id = comisionId;
             Numero = numero;
@@ -33,7 +33,7 @@ namespace Facturacion.API.Application.Models
             StatusId = statusId;
             Valor = valor;
             Tipo = tipo;
-            Detalle = detalle;
+            //Detalle = detalle;
 
         }
 
